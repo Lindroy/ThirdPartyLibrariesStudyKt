@@ -5,18 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CatalogActivity">
+    tools:context=".permissionsdispatcher.PermissionDispatchActivity">
 
-   <include layout="@layout/toolbar"/>
-
-    <ListView
-        android:dividerHeight="0.5dp"
-        android:divider="@android:color/darker_gray"
-        android:id="@+id/list"
+    <Button
+        android:onClick="callPhone"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content" />
 
 
-    </ListView>
 
 </android.support.v7.widget.LinearLayoutCompat>
