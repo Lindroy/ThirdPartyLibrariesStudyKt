@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">ThirdPartyLibrariesStudyKt</string>
     <string name="catalog">目录</string>
-    <string name="PersmissionDispatcher">permissionsdispatcher</string>
+    <string name="PermissionDispatcher">PermissionDispatcher</string>
+    <string name="NiceSpinner">NiceSpinner</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

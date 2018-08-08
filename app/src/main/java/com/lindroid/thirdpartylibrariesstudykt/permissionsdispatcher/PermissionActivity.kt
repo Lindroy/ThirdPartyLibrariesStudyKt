@@ -24,7 +24,7 @@ class PermissionActivity : BaseActivity() {
 
     override fun initView() {
         super.initView()
-        initToolBar(title = getString(R.string.PersmissionDispatcher))
+        initToolBar(title = getString(R.string.PermissionDispatcher))
     }
 
     override fun initOnClick() {

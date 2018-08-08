@@ -20,6 +20,7 @@ abstract class BaseActivity : AppCompatActivity() {
         context = this
         initBefore()
         setContentView(getContentViewId())
+
         initView()
         initOnClick()
     }

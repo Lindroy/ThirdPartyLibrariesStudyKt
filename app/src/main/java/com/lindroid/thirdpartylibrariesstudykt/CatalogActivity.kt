@@ -3,6 +3,7 @@ package com.lindroid.thirdpartylibrariesstudykt
 import android.content.Intent
 import android.widget.ArrayAdapter
 import com.lindroid.thirdpartylibrariesstudykt.base.BaseActivity
+import com.lindroid.thirdpartylibrariesstudykt.nicespinner.NiceSpinnerActivity
 import com.lindroid.thirdpartylibrariesstudykt.permissionsdispatcher.PermissionActivity
 import kotlinx.android.synthetic.main.activity_catalog.*
 import java.util.*
@@ -23,7 +24,8 @@ class CatalogActivity : BaseActivity() {
 
     override fun initBefore() {
         super.initBefore()
-        map[getString(R.string.PersmissionDispatcher)] = PermissionActivity::class.java
+        map[getString(R.string.PermissionDispatcher)] = PermissionActivity::class.java
+        map[getString(R.string.NiceSpinner)] = NiceSpinnerActivity::class.java
         for (mutableEntry in map) {
             names.add(mutableEntry.key)
         }
@@ -36,7 +38,8 @@ class CatalogActivity : BaseActivity() {
         list.adapter = arrayAdapter
         list.setOnItemClickListener { parent, view, position, id ->
             when (names[position]) {
-                getString(R.string.PersmissionDispatcher) -> startActivity(map[getString(R.string.PersmissionDispatcher)])
+                getString(R.string.PermissionDispatcher) -> startActivity(map[getString(R.string.PermissionDispatcher)])
+                getString(R.string.NiceSpinner) -> startActivity(map[getString(R.string.NiceSpinner)])
             }
         }
     }

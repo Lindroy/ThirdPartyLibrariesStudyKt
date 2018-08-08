@@ -3,7 +3,7 @@
     package="com.lindroid.thirdpartylibrariesstudykt">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -19,12 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".permissionsdispatcher.PermissionActivity">
-
-        </activity>
-        <activity android:name=".permissionsdispatcher.PermissionDispatchActivity">
-
-        </activity>
+        <activity android:name=".permissionsdispatcher.PermissionActivity"></activity>
+        <activity android:name=".permissionsdispatcher.PermissionDispatchActivity"></activity>
+        <activity android:name=".nicespinner.NiceSpinnerActivity"></activity>
     </application>
 
 </manifest>
