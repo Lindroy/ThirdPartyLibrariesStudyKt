@@ -3,8 +3,10 @@ package com.lindroid.thirdpartylibrariesstudykt
 import android.content.Intent
 import android.widget.ArrayAdapter
 import com.lindroid.thirdpartylibrariesstudykt.base.BaseActivity
+import com.lindroid.thirdpartylibrariesstudykt.bgabaseadapter.BaseAdapterActivity
 import com.lindroid.thirdpartylibrariesstudykt.nicespinner.NiceSpinnerActivity
 import com.lindroid.thirdpartylibrariesstudykt.permissionsdispatcher.PermissionActivity
+import com.lindroid.thirdpartylibrariesstudykt.xrichtext.XRichTextActivity
 import kotlinx.android.synthetic.main.activity_catalog.*
 import java.util.*
 import kotlin.collections.ArrayList
@@ -26,6 +28,8 @@ class CatalogActivity : BaseActivity() {
         super.initBefore()
         map[getString(R.string.PermissionDispatcher)] = PermissionActivity::class.java
         map[getString(R.string.NiceSpinner)] = NiceSpinnerActivity::class.java
+        map[getString(R.string.XRichText)] = XRichTextActivity::class.java
+        map[getString(R.string.BGABaseAdapter)] = BaseAdapterActivity::class.java
         for (mutableEntry in map) {
             names.add(mutableEntry.key)
         }
@@ -40,6 +44,8 @@ class CatalogActivity : BaseActivity() {
             when (names[position]) {
                 getString(R.string.PermissionDispatcher) -> startActivity(map[getString(R.string.PermissionDispatcher)])
                 getString(R.string.NiceSpinner) -> startActivity(map[getString(R.string.NiceSpinner)])
+                getString(R.string.XRichText) -> startActivity(map[getString(R.string.XRichText)])
+                getString(R.string.BGABaseAdapter) -> startActivity(map[getString(R.string.BGABaseAdapter)])
             }
         }
     }

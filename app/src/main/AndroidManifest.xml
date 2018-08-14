@@ -19,9 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".permissionsdispatcher.PermissionActivity"></activity>
-        <activity android:name=".permissionsdispatcher.PermissionDispatchActivity"></activity>
-        <activity android:name=".nicespinner.NiceSpinnerActivity"></activity>
+        <activity android:name=".permissionsdispatcher.PermissionActivity" />
+        <activity android:name=".permissionsdispatcher.PermissionDispatchActivity" />
+        <activity android:name=".nicespinner.NiceSpinnerActivity" />
+        <activity android:name=".xrichtext.XRichTextActivity" />
+        <activity android:name=".bgabaseadapter.BaseAdapterActivity"></activity>
     </application>
 
 </manifest>
