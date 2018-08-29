@@ -18,7 +18,6 @@ class CatalogActivity : BaseActivity() {
 
     private val map = TreeMap<String, Class<*>>()
     private val names: MutableList<String> = ArrayList()
-
     override fun getContentViewId(): Int {
         return R.layout.activity_catalog
     }
@@ -53,5 +52,7 @@ class CatalogActivity : BaseActivity() {
     private fun startActivity(cls: Class<*>?) {
         startActivity(Intent(context, cls))
     }
+
+
 
 }
