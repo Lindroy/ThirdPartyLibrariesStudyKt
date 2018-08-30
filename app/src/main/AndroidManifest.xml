@@ -23,7 +23,8 @@
         <activity android:name=".permissionsdispatcher.PermissionDispatchActivity" />
         <activity android:name=".nicespinner.NiceSpinnerActivity" />
         <activity android:name=".xrichtext.XRichTextActivity" />
-        <activity android:name=".bgabaseadapter.BaseAdapterActivity"></activity>
+        <activity android:name=".bgabaseadapter.BaseAdapterActivity" />
+        <activity android:name=".materialcalendarview.MaterialCalendarActivity"></activity>
     </application>
 
 </manifest>

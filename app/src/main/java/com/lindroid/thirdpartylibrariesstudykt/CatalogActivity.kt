@@ -4,6 +4,7 @@ import android.content.Intent
 import android.widget.ArrayAdapter
 import com.lindroid.thirdpartylibrariesstudykt.base.BaseActivity
 import com.lindroid.thirdpartylibrariesstudykt.bgabaseadapter.BaseAdapterActivity
+import com.lindroid.thirdpartylibrariesstudykt.materialcalendarview.MaterialCalendarActivity
 import com.lindroid.thirdpartylibrariesstudykt.nicespinner.NiceSpinnerActivity
 import com.lindroid.thirdpartylibrariesstudykt.permissionsdispatcher.PermissionActivity
 import com.lindroid.thirdpartylibrariesstudykt.xrichtext.XRichTextActivity
@@ -29,6 +30,7 @@ class CatalogActivity : BaseActivity() {
         map[getString(R.string.NiceSpinner)] = NiceSpinnerActivity::class.java
         map[getString(R.string.XRichText)] = XRichTextActivity::class.java
         map[getString(R.string.BGABaseAdapter)] = BaseAdapterActivity::class.java
+        map[getString(R.string.material_calendarview)] = MaterialCalendarActivity::class.java
         for (mutableEntry in map) {
             names.add(mutableEntry.key)
         }
@@ -45,6 +47,7 @@ class CatalogActivity : BaseActivity() {
                 getString(R.string.NiceSpinner) -> startActivity(map[getString(R.string.NiceSpinner)])
                 getString(R.string.XRichText) -> startActivity(map[getString(R.string.XRichText)])
                 getString(R.string.BGABaseAdapter) -> startActivity(map[getString(R.string.BGABaseAdapter)])
+                getString(R.string.material_calendarview) -> startActivity(map[getString(R.string.material_calendarview)])
             }
         }
     }
