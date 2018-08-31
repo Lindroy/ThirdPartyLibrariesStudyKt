@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".materialcalendarview.MaterialCalendarActivity">
+
     <include layout="@layout/toolbar"/>
+
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView
         app:mcv_tileWidth="match_parent"
         app:mcv_tileHeight="35dp"
