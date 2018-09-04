@@ -19,7 +19,6 @@ import permissions.dispatcher.*
 @RuntimePermissions
 class PermissionFragment : Fragment() {
 
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 
@@ -33,7 +32,6 @@ class PermissionFragment : Fragment() {
             callPhoneWithPermissionCheck()
         }
     }
-
 
 /*
     companion object {

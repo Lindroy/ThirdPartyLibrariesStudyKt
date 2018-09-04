@@ -10,7 +10,7 @@ import java.util.*
 /**
  * @author Lin
  * @date 2018/8/31
- * @function
+ * @function 为周末文字设置颜色的装饰类
  * @Description
  */
 class WeekendDecorator:DayViewDecorator{
@@ -26,5 +26,4 @@ class WeekendDecorator:DayViewDecorator{
     override fun decorate(view: DayViewFacade) {
         view.addSpan(ForegroundColorSpan(color))
     }
-
 }

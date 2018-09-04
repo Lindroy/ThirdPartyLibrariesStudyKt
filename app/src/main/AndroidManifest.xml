@@ -24,7 +24,8 @@
         <activity android:name=".nicespinner.NiceSpinnerActivity" />
         <activity android:name=".xrichtext.XRichTextActivity" />
         <activity android:name=".bgabaseadapter.BaseAdapterActivity" />
-        <activity android:name=".materialcalendarview.MaterialCalendarActivity"></activity>
+        <activity android:name=".materialcalendarview.MaterialCalendarActivity" />
+        <activity android:name=".supercalendar.SuperCalendarActivity"></activity>
     </application>
 
 </manifest>

@@ -11,6 +11,9 @@ import kotlinx.android.synthetic.main.activity_material_calendar.*
 import java.text.SimpleDateFormat
 import java.util.*
 
+/**
+ * GitHub地址：https://github.com/prolificinteractive/material-calendarview
+ */
 class MaterialCalendarActivity : BaseActivity() {
     private val TAG = "CalendarTag"
     override fun getContentViewId(): Int = R.layout.activity_material_calendar
