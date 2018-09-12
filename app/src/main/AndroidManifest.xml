@@ -25,7 +25,8 @@
         <activity android:name=".xrichtext.XRichTextActivity" />
         <activity android:name=".bgabaseadapter.BaseAdapterActivity" />
         <activity android:name=".materialcalendarview.MaterialCalendarActivity" />
-        <activity android:name=".supercalendar.SuperCalendarActivity"></activity>
+        <activity android:name=".supercalendar.SuperCalendarActivity" />
+        <activity android:name=".bgabaseadapter.FormActivity"></activity>
     </application>
 
 </manifest>

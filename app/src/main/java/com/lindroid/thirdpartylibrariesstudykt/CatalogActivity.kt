@@ -3,7 +3,7 @@ package com.lindroid.thirdpartylibrariesstudykt
 import android.content.Intent
 import android.widget.ArrayAdapter
 import com.lindroid.thirdpartylibrariesstudykt.base.BaseActivity
-import com.lindroid.thirdpartylibrariesstudykt.bgabaseadapter.BaseAdapterActivity
+import com.lindroid.thirdpartylibrariesstudykt.bgabaseadapter.FormActivity
 import com.lindroid.thirdpartylibrariesstudykt.materialcalendarview.MaterialCalendarActivity
 import com.lindroid.thirdpartylibrariesstudykt.nicespinner.NiceSpinnerActivity
 import com.lindroid.thirdpartylibrariesstudykt.permissionsdispatcher.PermissionActivity
@@ -29,7 +29,7 @@ class CatalogActivity : BaseActivity() {
         map[getString(R.string.PermissionDispatcher)] = PermissionActivity::class.java
         map[getString(R.string.NiceSpinner)] = NiceSpinnerActivity::class.java
         map[getString(R.string.XRichText)] = XRichTextActivity::class.java
-        map[getString(R.string.BGABaseAdapter)] = BaseAdapterActivity::class.java
+        map[getString(R.string.BGABaseAdapter)] = FormActivity::class.java
         map[getString(R.string.material_calendarview)] = MaterialCalendarActivity::class.java
         for (mutableEntry in map) {
             names.add(mutableEntry.key)
