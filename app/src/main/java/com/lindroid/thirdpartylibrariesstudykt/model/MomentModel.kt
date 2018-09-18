@@ -7,6 +7,7 @@ package com.lindroid.thirdpartylibrariesstudykt.model
  * @Description
  */
 data class MomentModel (
-        val content:String="",
+        val name:String="匿名用户",
+        val content:String="默认发送的状态",
         val photos:ArrayList<String> = ArrayList()
 )
