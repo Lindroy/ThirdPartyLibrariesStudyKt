@@ -2,6 +2,7 @@ package com.lindroid.thirdpartylibrariesstudykt.bgaphotopicker
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Intent
 import android.os.Handler
 import android.support.v7.widget.DividerItemDecoration
@@ -26,6 +27,8 @@ class BGAPhotoActivity : BaseActivity() {
     private val momentList: MutableList<MomentModel> = ArrayList()
     private lateinit var adapter: BGARecyclerViewAdapter<MomentModel>
     private lateinit var curPhotoLayout: BGANinePhotoLayout
+
+    private val RC_ADD_MOMENT = 100
 
     override fun getContentViewId(): Int = R.layout.activity_bgaphoto
 
@@ -90,7 +93,20 @@ class BGAPhotoActivity : BaseActivity() {
     override fun initOnClick() {
         super.initOnClick()
         btnAdd.setOnClickListener {
-            startActivityForResult(Intent(context, MomentAddActivity::class.java), 100)
+            startActivityForResult(Intent(context, MomentAddActivity::class.java), RC_ADD_MOMENT)
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode != Activity.RESULT_OK || data == null){
+            return
+        }
+        when(requestCode){
+            RC_ADD_MOMENT->{
+                adapter.addFirstItem(data.getSerializableExtra(MomentAddActivity.ADD_MOMENT) as MomentModel)
+                rvMoment.scrollToPosition(0)
+            }
         }
     }
 

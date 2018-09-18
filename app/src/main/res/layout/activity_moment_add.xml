@@ -9,6 +9,12 @@
 
     <include layout="@layout/toolbar"/>
 
+    <Button
+        android:id="@+id/btnPublish"
+        android:text="发布"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <EditText
         android:hint="此刻的想法……"
         android:gravity="start|top"
