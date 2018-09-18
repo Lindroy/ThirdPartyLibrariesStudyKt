@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -25,8 +28,9 @@
         <activity android:name=".xrichtext.XRichTextActivity" />
         <activity android:name=".bgabaseadapter.BaseAdapterActivity" />
         <activity android:name=".materialcalendarview.MaterialCalendarActivity" />
-        <activity android:name=".supercalendar.SuperCalendarActivity" />
-        <activity android:name=".bgabaseadapter.FormActivity"></activity>
+        <activity android:name=".bgabaseadapter.FormActivity" />
+        <activity android:name=".bgaphotopicker.BGAPhotoActivity" />
+        <activity android:name=".bgaphotopicker.MomentAddActivity"></activity>
     </application>
 
 </manifest>
