@@ -94,7 +94,6 @@ class MomentAddActivity : BaseActivity() {
                 .pauseOnScroll(false)
                 .build()
         startActivityForResult(intent, RC_CHOOSE_PHOTO)
-
     }
 
     /**

@@ -14,6 +14,7 @@ import cn.bingoogolapple.baseadapter.BGAViewHolderHelper
 import cn.bingoogolapple.photopicker.activity.BGAPhotoPreviewActivity
 import cn.bingoogolapple.photopicker.widget.BGANinePhotoLayout
 import com.lindroid.thirdpartylibrariesstudykt.R
+import com.lindroid.thirdpartylibrariesstudykt.base.App
 import com.lindroid.thirdpartylibrariesstudykt.base.BaseActivity
 import com.lindroid.thirdpartylibrariesstudykt.model.MomentModel
 import kotlinx.android.synthetic.main.activity_bgaphoto.*
@@ -56,6 +57,7 @@ class BGAPhotoActivity : BaseActivity() {
         super.initView()
         initToolBar(getString(R.string.moment))
         initAdapter()
+        App.instance.getString(R.string.moment)
         swipeRefresh.setColorSchemeResources(R.color.colorPrimary)
         swipeRefresh.setOnRefreshListener {
             Handler(Handler.Callback {

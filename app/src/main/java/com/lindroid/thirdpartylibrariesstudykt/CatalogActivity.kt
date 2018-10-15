@@ -2,6 +2,7 @@ package com.lindroid.thirdpartylibrariesstudykt
 
 import android.content.Intent
 import android.widget.ArrayAdapter
+import com.lindroid.thirdpartylibrariesstudykt.base.App
 import com.lindroid.thirdpartylibrariesstudykt.base.BaseActivity
 import com.lindroid.thirdpartylibrariesstudykt.bgabaseadapter.FormActivity
 import com.lindroid.thirdpartylibrariesstudykt.bgaphotopicker.BGAPhotoActivity
@@ -40,6 +41,7 @@ class CatalogActivity : BaseActivity() {
 
     override fun initView() {
         super.initView()
+
         initToolBar(getString(R.string.catalog), false)
         val arrayAdapter = ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, android.R.id.text1, names)
         list.adapter = arrayAdapter
