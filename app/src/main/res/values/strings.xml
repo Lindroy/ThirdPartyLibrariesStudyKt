@@ -6,6 +6,7 @@
     <string name="XRichText">XRichText</string>
     <string name="BGABaseAdapter">BGABaseAdapter</string>
     <string name="material_calendarview">material-calendarview</string>
+    <string name="Logger">Logger</string>
     <string name="moment">朋友圈</string>
     <string name="add_moment">发布朋友圈</string>
 

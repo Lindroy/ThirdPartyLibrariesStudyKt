@@ -1,6 +1,10 @@
 package com.lindroid.thirdpartylibrariesstudykt.base
 
 import android.app.Application
+import com.lindroid.thirdpartylibrariesstudykt.logger.LogCatStrategy
+import com.orhanobut.logger.AndroidLogAdapter
+import com.orhanobut.logger.Logger
+import com.orhanobut.logger.PrettyFormatStrategy
 
 /**
  * @author Lin
@@ -8,10 +12,10 @@ import android.app.Application
  * @function
  * @Description
  */
-class App :Application()  {
+class App : Application() {
 
     companion object {
-        lateinit var instance:App
+        lateinit var instance: App
     }
 
     init {
@@ -19,9 +23,13 @@ class App :Application()  {
     }
 
 
-
     override fun onCreate() {
         super.onCreate()
+        val formatStrategy = PrettyFormatStrategy.newBuilder()
+                .logStrategy(LogCatStrategy())
+                .tag("MyLog")
+                .build()
+        Logger.addLogAdapter(AndroidLogAdapter(formatStrategy))
 
     }
 }
