@@ -51,6 +51,7 @@ dependencies {
     }
     kapt 'com.github.hotchemi:permissionsdispatcher-processor:3.1.0'
     implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'com.blankj:alog:1.9.0'
 
 
     implementation "org.jetbrains.anko:anko-commons:$anko_version"

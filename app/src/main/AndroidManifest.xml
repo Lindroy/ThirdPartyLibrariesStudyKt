@@ -32,7 +32,8 @@
         <activity android:name=".bgabaseadapter.FormActivity" />
         <activity android:name=".bgaphotopicker.BGAPhotoActivity" />
         <activity android:name=".bgaphotopicker.MomentAddActivity" />
-        <activity android:name=".logger.LoggerActivity"></activity>
+        <activity android:name=".logger.LoggerActivity" />
+        <activity android:name=".alog.ALogActivity"></activity>
     </application>
 
 </manifest>

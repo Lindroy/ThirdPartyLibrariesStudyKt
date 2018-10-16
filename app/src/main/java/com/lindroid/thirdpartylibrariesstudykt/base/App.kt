@@ -25,11 +25,16 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        initLogger()
+
+
+    }
+
+    private fun initLogger() {
         val formatStrategy = PrettyFormatStrategy.newBuilder()
                 .logStrategy(LogCatStrategy())
                 .tag("MyLog")
                 .build()
         Logger.addLogAdapter(AndroidLogAdapter(formatStrategy))
-
     }
 }
